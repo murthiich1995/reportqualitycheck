@@ -1,0 +1,37 @@
+{
+	"info": {
+		"_postman_id": "dc28d6fc-9bb1-4d8d-b5de-d72136d91f2f",
+		"name": "USER APIS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "5726349"
+	},
+	"item": [
+		{
+			"name": "localhost:3000/qc",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"report\": \"TECHNIQUE: Multiplanar and multisequential MRI examination obtained. Comparison: None FINDINGS: ALIGNMENT: There is normal alignment of lumbar spine.  BONES/MARROW: Vertebral bodies are of normal height. The marrow signal has an overall benign appearance. CANAL/CONUS: The conus medullaris and filum terminale are within normal limits. DEGENERATIVE CHANGES: There is a loss of disc T2 signal at multiple levels compatible with disc desiccation. No significant osteophyte formation is noted. SOFT TISSUES: Unremarkable. LEVELS: L1-2: No focal disc bulge or herniation demonstrated. No significant central or lateral recess spinal stenosis. The neural foramina are within normal limits bilaterally with no definite compromise to the exiting nerve roots. L2-3: The disc is intact with no bulge, herniation or annular tear. No evidence of spinal stenosis noted. Neural foramina are unremarkable bilaterally with no evidence of compression of nerve roots. L3-4: No focal disc bulge or herniation demonstrated. No significant central or lateral recess spinal stenosis. The neural foramina are within normal limits bilaterally with no definite compromise to the exiting nerve roots. L4-5: There is no evidence of disc bulge, herniation or central stenosis. Neural foramina are patent. There is no nerve root compression. L5-S1: Broad-based central disc herniation is present. This results in compression and impingement of the ventral thecal sac (axial T2 image 22, sagittal T1 and T2 image 7). AP dimension of disc protrusion measures 5.4 mm. AP diameter of dural sac measures 15 mm. Neural foramina are normal. IMPRESSION: 1. Normal alignment of lumbar spine.  \",\r\n  \"metadata\": { \"case_type\": \"Non-MVA\", \"study\": \"MRI Lumbar\", \"stir_present\": false }\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/qc",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"qc"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

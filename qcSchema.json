@@ -1,0 +1,33 @@
+{
+  "type": "object",
+  "properties": {
+    "quality_score": { "type": "integer" },
+    "issues": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "category": { "type": "string" },
+          "description": { "type": "string" },
+          "severity": { "type": "string", "enum": ["minor", "major", "critical"] }
+        },
+        "required": ["category", "description", "severity"]
+      }
+    },
+    "section_analysis": {
+      "type": "object",
+      "properties": {
+        "clinical_indication": { "type": "string" },
+        "technique": { "type": "string" },
+        "findings": { "type": "string" },
+        "impression": { "type": "string" }
+      },
+      "required": ["clinical_indication", "technique", "findings", "impression"]
+    },
+    "recommendations": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  },
+  "required": ["quality_score", "issues", "section_analysis", "recommendations"]
+}
